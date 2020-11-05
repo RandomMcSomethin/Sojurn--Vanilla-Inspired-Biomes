@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "sojurn",
+  "version": "${version}",
+  "name": "Sojurn",
+  "description": "Adds in a number of vanilla inspired biomes.",
+  "authors": [
+    "RandomMcSomethin"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/sojurn/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "sojurn.sojurn.client.SojurnClient"
+    ],
+    "main": [
+      "sojurn.sojurn.Sojurn"
+    ],
+    "modmenu": [ "sojurn.sojurn.SojurnMenu" ]
+  },
+  "mixins": [
+    "sojurn.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.6+build.214",
+    "fabric": "*",
+    "minecraft": "1.16.4"
+  }
+}
